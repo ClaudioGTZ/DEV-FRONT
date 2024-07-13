@@ -1,0 +1,107 @@
+/* Datos útiles
+Colores
+    Textos: 555555
+    Color del logo: 699AB8
+    Tipografía: Josefin Sans / Albert Sans
+*/
+
+/* Titulos */
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    color: #699AB8;
+    line-height: 50%;
+    }
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    color: #699AB8;
+    line-height: 50%;
+    }
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:medium;
+    color: #699AB8;
+    line-height: 50%;
+    }   
+
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:small;
+    color: #699AB8;
+    line-height: 50%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+
+/* Párrafo de texto*/
+.parrafo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+    text-align: justify;
+    }
+
+.destacado {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 1000;
+    color: #699AB8;
+    line-height: 1.5;
+    text-align: justify;
+    }
+
+/* Parrafo de bajadas */
+.bajadas {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    color: #555555;
+    line-height: 1.7;
+    text-align: justify;
+}
+/* bordes de imágenes */
+.bordesredondeadosAI {
+    border-radius: 75px 15px 75px 15px;
+    border: 6px outset #699ab8;
+}
+.bordesredondeadosDI {
+    border-radius: 15px 75px 15px 75px;
+    border: 6px inset #699ab8;
+}
+
+/*pseudo header para pruebas*/
+#headerfalso {
+    position:fixed;
+    top: 5%;
+    right: 10%;
+    display: inline-flex;
+    align-items: center; /* hace que los dos contenedores estén en horizontal y no en vertical */
+    justify-content: space-evenly;
+    width: 50%;
+    height: 30px;
+    border: 3px dotted #d4d4d4;
+    padding: 10px;
+}
+
+/*pseudo header izquierdo para pruebas*/
+#headerfalsoizq {
+    width: 50%;
+    height: 100%;
+    background: #57ec13;
+    margin:5px
+}
+/*pseudo header derecho para pruebas*/
+#headerfalsoder {
+    width: 50%;
+    height: 100%;
+    background: #f33535;
+    margin:5px
+    }
+/*footer*/
+#footer {
+    width: 100%;
+    height: 150px;
+    background-color: #699AB8;
+    background: linear-gradient(163deg,#699ab8 0%, #eeeeee 80%);
+}
