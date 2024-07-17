@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ejercicio JavaScript 2</title>
+</head>
+
+<body>
+    <script>
+		const lista = []; //array//
+        let nuevo; //guarda los números que se van agregando//
+        
+        /*agregarle al array números
+        Mejoras: hay que validar que los números ingresados no sean strings*/
+
+        for (let contador = 1; contador <= 5; contador++) {
+            nuevo = prompt(`Ingrese un número (${contador} de 5)`, '');
+            lista.push(nuevo);
+        }
+        console.log(lista);
+
+        //buscar el mayor número//
+        let mayor = lista[0];
+        for( contador = 1; contador <= lista.length; contador++){
+            if (lista[contador] >= mayor) {
+                mayor = lista[contador]
+            }
+        }
+        //Imprimir el mayor//
+        console.log(mayor)
+        document.write(`El mayor número ingresado es ${mayor}`);
+    </script>
+</body>
+</html>

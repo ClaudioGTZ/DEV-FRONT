@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Ejercicio JavaScript 1</title>
+</head>
+
+<body>
+  <script>
+    let ok = false; //define la salida del bucle//
+    let distancia; //guarda la distancia a recorrer//
+
+    while (ok === false) {
+      //Pedir la distancia a recorrer//
+      distancia = prompt('¿Qué distancia desea recorrer (en metros)?:', '');
+
+      /* Validar que sea número mayor a 0
+      Mejoras:  1. Debería poder cancelar el bucle. ¿Usar Confirm en lugar de Alert?
+                2. ¿Podrían aceptarse números en string? ¿parseInt? */
+      if (!isNaN(distancia) && distancia >= 0) {
+        ok = true;
+      } else if (isNaN(distancia)) {
+        alert(`Debe ingresar un valor numérico.`);
+      } else if (distancia <= 0) {
+        alert(`La distancia debe ser mayor o igual a 0.`);
+      }
+    }
+
+    // Validar Según distancia //
+    let medio;
+    if (distancia == 0) {
+      medio = "no moverse del sillón.";
+    } else if (distancia > 0 && distancia <= 1000) {
+      medio = "ir a pie.";
+    } else if (distancia > 1000 && distancia <= 10000) {
+      medio = "usar una bicicleta.";
+    } else if (distancia > 10000 && distancia <= 30000) {
+      medio = "tomar un colectivo.";
+    } else if (distancia > 30000 && distancia <= 100000) {
+      medio = "alquilar un auto.";
+    } else if (distancia > 100000) {
+      medio = "comprar un pasaje de avión.";
+    }
+
+    //Devolver medio elegido//
+    console.log(`Para una distancia de ${distancia} metros, le recomiento ${medio}`)
+    document.write(`Para una distancia de ${distancia} metros, le recomiendo ${medio}`)
+
+  </script>
+</body>
+
+</html>
