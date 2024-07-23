@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Avanzado Ejercicio 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <script src="funciones.js"></script> <!-- Carga el archivo con funciones pero no funciona-->
+    <div>
+        <h3>Mensaje:</h3><br>
+        <textarea id="cajaTexto" cols="40" rows="10" maxlength="50" placeholder="Escriba aquí..."></textarea><br><br>
+        <!-- cajaTexto es donde se escribe -->
+        <div>Caracteres escritos: <span id="contador"></span></div><br> <!-- "contador" es el display de números -->
+        <button id="Borrar">Borrar</button>
+    </div>
+
+    <script> //ejecuta el contador//
+        let texto = document.getElementById('cajaTexto'); // Busca el elemento cajaTexto //
+        let cantidad = document.getElementById('contador'); // Busca el elemento contador //
+        texto.addEventListener('keyup', function () {  //keyup: se activa cuando se suelta la tecla. Keydown y keypress no funcionan//
+            cantidad.innerText = texto.value.length;
+        });
+    </script>
+
+    <script> //ejecuta el boton borrar//
+        limpiar = document.getElementById('Borrar')
+        limpiar.addEventListener('click', function () {
+            document.getElementById('cajaTexto').value = ''
+            document.getElementById('contador').innerText = ''
+        });
+    </script>
+
+</body>
