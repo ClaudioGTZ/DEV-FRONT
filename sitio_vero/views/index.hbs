@@ -1,0 +1,375 @@
+
+    <!-- Form de suscripción -->
+    <div class="container-fluid text-center suscripcion">
+        <div class="row align-items-center" style="height: 75px;">
+            <div class="col-5">
+                <label for="validationCustom01" class="form-label h6">Suscríbete a mi newsletter</label>
+            </div>
+            <div class="col-5">
+                <input type="text" class="form-control h6" id="validationCustom01" value="ejemplo@mail.com" required>
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Enviar
+                </button>
+    
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body h4">
+                                ¡Gracias por suscribirte!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin del Form de suscripción -->
+
+
+    <!-- Carrousel -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="img/trabajadoras_1.jpg" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/trabajadoras_2.jpg" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/trabajadoras_3.jpg" class="d-block w-100" alt="Imagen 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Cierra el Carrousel -->
+
+
+    <!-- Soy Vero-->
+    <div id="soyvero" class="container">
+        <div>
+            <p class="seccion">Soy Vero</p>
+        </div>
+    
+        <div id="quiensoy">
+            <!-- CV -->
+            <div class="col-7">
+                <h5>"Todos los perros tienen pulgas..."</h5>
+                <p>Dolores dolor commodi vero ea unde sapiente, eveniet consequuntur nesciunt fugiat ipsam similique exercitationem iure perspiciatis pariatur molestiae?
+                    ihil. Quibusdam quo optio unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus hic suscipit
+                   utem, beatae, eligendi sed maxime porro officiis.</p>
+    
+                <!-- Acordeon -->
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                · Educación
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Nunca pares de aprender.</strong> It is shown by default, until the collapse
+                                plugin adds the appropriate classes that we use to style each element. These can modify
+                                any of this with custom CSS or overriding our default variables. It's also worth noting that just
+                                about any HTML can go within the, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                · Mi equipo
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Trabajá con gente que sepa más que vos</strong> It is hidden by default, until the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                                can modify any of this with custom CSS or overriding our default variables.
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Acordeon -->
+            </div> <!--- fin CV -->
+
+            <!-- fotografías -->
+            <div id="carouselExampleCaptions" class="carousel slide Carrousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  
+                    <div class="carousel-item active">
+                    <img src="img/vero_1.jpg" class="d-block w-100" alt="ETH latam 2023">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>ETH Latam 2023</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="carousel-item">
+                    <img src="img/vero_2.jpg" class="d-block w-100" alt="e-commerce day 2023">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>E-coomerce Day 2023</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div> <!-- Fin Fotografía -->
+        </div> <!-- Fin Quién soy -->
+    </div> <!-- Soy Vero -->
+    
+    <!-- Mi metodología -->
+    <div id="metodologia" class="container">
+        <div>
+           <p class="seccion">Mi Metodología</p>
+        </div>
+        <div class="container text-center" style="width: 90%;">
+            <div class="row">
+                <div class="col">
+                    <div class="card sinborde bordesredondeados">
+                        <img src="img/Arbol_1.png" class="card-img-top" alt="Pensar">
+                        <div class="card-body">
+                            <h5 class="card-title" style=color:#016685;>1. Hoy</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card sinborde">
+                        <img src="img/Arbol_2.png" class="card-img-top" alt="Pensar">
+                        <div class="card-body">
+                            <h5 class="card-title" style=color:#016685; >2. Objetivos</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card sinborde">
+                        <img src="img/Arbol_3.png" class="card-img-top" alt="Pensar">
+                        <div class="card-body">
+                            <h5 class="card-title" style=color:#016685;>3. Presupuesto</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card sinborde">
+                        <img src="img/Arbol_4.png" class="card-img-top" alt="Pensar">
+                        <div class="card-body">
+                            <h5 class="card-title" style=color:#016685;>4. Automatizar</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card sinborde">
+                        <img src="img/Arbol_5.png" class="card-img-top" alt="Pensar">
+                        <div class="card-body">
+                            <h5 class="card-title" style=color:#016685;>5. Futuro</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de mi metodología -->
+     
+    <!-- Detalles del curso -->
+    <div id="curso" class="container">
+        <div>
+           <p class="seccion">Sobre el curso</p>
+        </div>
+
+        <div class="container-flid" style="background-color: #eeeeee;">
+            <div class="container text-center">
+                <div class="row align-items-start">
+        
+                    <!-- Columna 1 - Info del curso -->
+                    <div class="col-9" style="background-color: #eeeeee; padding-top: 25px;">
+                        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#curso1">Curso</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#cursocronograma">Cronograma</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#cursorequisitos">Requisitos</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+                            data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+                            <h4 id="curso1">Curso</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, autem. Cupiditate
+                                dignissimos nam aliquid cum, maiores ut reprehenderit dolore saepe, quam culpa reiciendis
+                                libero repellendus eaque. Quo, architecto. Laboriosam, nulla. Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, odio. Ullam nisi
+                                consectetur exercitationem sed eveniet esse non deserunt dicta deleniti eum? Impedit aliquid
+                                blanditiis omnis in quaerat, labore nesciunt.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt alias iusto praesentium,
+                                hic earum commodi. Velit illo, deleniti eius nobis, vel libero dolor sequi blanditiis, quae quas
+                                perferendis optio.
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque a doloribus cupiditate fugit
+                                dignissimos,
+                                libero voluptatibus porro nisi sit voluptas non aut minima repellendus architecto quasi velit.
+                                Alias, neque. Enim?</p>
+                            <h4 id="cursocronograma" class="curso">Cronograma</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, autem.</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Inicio</th>
+                                        <th scope="col">Fin</th>
+                                        <th scope="col">Cupos disponibles</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>5/09/24</td>
+                                        <td>12/12/24</td>
+                                        <td>Sin Vacantes</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>10/10/24</td>
+                                        <td>8/01/2024</td>
+                                        <td>cupos disponibles</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Intensivo Verano</td>
+                                        <td>Todo Enero</td>
+                                        <td>cupos disponibles</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h4 id="cursorequisitos" class="curso">Requisitos</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, autem. Cupiditate
+                                dignissimos nam aliquid cum, maiores ut reprehenderit dolore saepe, quam culpa reiciendis
+                                libero repellendus eaque. Quo, architecto. Laboriosam, nulla. Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.</p>
+                            <ol class="list-group list-group-flush">
+                                <li class="list-group-item">1. Conocimientos básicos de Excel</li>
+                                <li class="list-group-item">2. 6 hs semanales de práctica</li>
+                                <li class="list-group-item">3. 2 hs semanales de clases online</li>
+                            </ol>
+                        </div>
+        
+        
+                        <!-- Columna 1 - Formulario de consulta -->
+                        <div id="contacto" class="mb-3" style="background-color:#eeeeee";>
+                            <h3 style="padding-top: 50px;">Dudas sobre este curso</h3>
+                            <p>Si tenés alguna duda sobre este curso escribime.</p>
+                            <form class="mb-3" action="/" method="post">
+                                <div>
+                                    <label for="exampleFormControlInput1" class="form-label">¿Cuál es tu nombre?</label>
+                                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Tu nombre (o tu apodo)" name="nombre">
+                                </div>
+                                <div>
+                                    <label for="exampleFormControlInput1" class="form-label">Dejame tu Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" name="mail">
+                                    <div id="emailHelp" class="form-text">¡Tranquila! No lo voy a compartir no nadie.</div>
+                                </div>
+
+                                <div>
+                                    <label for="exampleFormControlTextarea1" class="form-label">Tu consulta</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escribí acá tu mensaje" name="mensaje"></textarea>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-primary" style="margin:40px;">Enviar</button>
+                                </div>
+                            </form>
+                            
+                            <div style="margin: 15px;">
+                                {{message}}
+                            </div>
+                             
+                        </div>
+                                            
+        
+                    </div> <!-- Cierra la columna 1-->
+        
+        
+                    <!-- Columna 2 -->
+                    <div class="col-3" style="background-color: #eeeeee; border-top: 20px;">
+        
+                        <!-- Profesor -->
+                        <div class="card" style="margin-top: 25px;">
+                            <img src="img/profe_mariela.jpg" class="card-img-top" alt="Foto del instructor">
+                            <div class="card-body">
+                                <h5 class="card-title">Mariela Bourden</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+                                    accusamus. Sit perferendis qui corporis alias aliquid sapiente? Vitae, eius!</p>
+                                <a href="#" class="btn btn-primary">LinkedIn</a>
+                            </div>
+                        </div>
+        
+                        <!-- Columna 2 - Publicidad -->
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" style="margin-top: 25px;"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/promo_curso1.jpg" class="card-img-top" alt="Publicidad 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/promo_curso2.jpg" class="card-img-top" alt="Publicidad 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/promo_curso3.jpg" class="card-img-top" alt="Publicidad 3">
+                                </div>
+                            </div>
+                        </div>  <!-- Fin de publicidad -->
+                    </div> <!-- Fin de columna Profesor y publicidad -->
+                </div> 
+            </div>
+        </div>
+    </div>

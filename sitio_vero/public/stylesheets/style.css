@@ -1,0 +1,133 @@
+/* Colores
+    Primario: #016685 
+    Texto claro: #ececec */
+
+/* Fuentes de Google Fonts
+    font-family: "Pacifico", cursive;
+    font-family: "Albert Sans", sans-serif; */
+
+
+    html {
+      scroll-behavior: smooth;
+  }
+  
+  .pacifico-regular {
+      font-family: "Pacifico", cursive;
+      font-weight: 400;
+      font-style: normal;
+  }
+  
+  .albert-sans {
+      font-family: "Albert Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      /* valor entre 100 y 900 */
+      font-style: normal;
+  }
+  
+  .menu {
+      display: flex;
+      justify-content: center;
+      font-weight: 500;
+  }
+  
+  .suscripcion {
+      background-color: #c7e7f0;
+      /* background-color: #95d1e4; */
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+  }
+  
+  .navegacion {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 10px;
+      margin-top: 10px;
+  }
+  
+  #quiensoy {
+      align-items: center; /* hace que los dos contenedores estén en horizontal y no en vertical */
+      display: flex;
+      justify-content: space-evenly;
+      padding: 5px;
+  }
+  
+  .seccion {
+      color: #016685;
+      font-family: "Pacifico";
+      font-style: oblique;
+      font-weight: 400;
+      font-size:xx-large;
+      padding-top: 50px;
+      padding-bottom: 25px;
+  }
+  
+  .curso {
+      margin-top: 75px;
+  }
+  
+  .newsletter {
+      font-family: 800;
+  }
+  
+  h1 {
+      font-family: "Albert Sans", sans-serif;
+  }
+  
+  h2 {
+      font-family: "Albert Sans", sans-serif;
+  }
+  
+  h3 {
+      font-family: "Albert Sans", sans-serif;
+  }
+  
+  h4 {
+      font-family: "Albert Sans", sans-serif;
+  }
+  
+  h4.b {
+      font-family: "Albert Sans", sans-serif;
+      color: #d4d4d4;
+      font-weight: 500;
+  }
+  
+  h5 {
+      color: 016685;
+      font-family: "Albert Sans", sans-serif;
+      font-weight: 700;
+  }
+  
+  h6 {
+      font-family: "Albert Sans", sans-serif;
+  }
+  
+  p {
+      font-family: "Albert Sans", sans-serif;
+  }
+  
+  .sinborde {
+      border: #fff;
+      box-shadow: width: 10;;
+  }
+  
+  .bordesredondeados {
+      border-radius: 22px 22px 22px 22px;
+  }
+  
+  
+  /* Estilos para el footer */
+  .footer {
+      align-items: center;
+      background-color: #016685;
+      color: #ececec;
+      display: flex;
+      flex-direction: column;
+      height: 75px;
+      justify-content: space-between;
+      padding-top: 10px;
+      text-align: center;
+  }
+  
