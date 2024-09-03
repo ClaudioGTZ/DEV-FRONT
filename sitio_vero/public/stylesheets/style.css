@@ -24,7 +24,30 @@
       /* valor entre 100 y 900 */
       font-style: normal;
   }
-  
+
+  .carousel-inner img {
+    width: 250px;
+    height: 313px;
+    object-fit: cover; /* Mantiene la relación de aspecto, recortando si es necesario */
+  }
+    
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-container {
+    width: 250px; /* Ancho del contenedor del carrusel */
+    margin: 0 auto;
+  }
+
+  .col-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   .menu {
       display: flex;
       justify-content: center;
@@ -58,7 +81,7 @@
       color: #016685;
       font-family: "Pacifico";
       font-style: oblique;
-      font-weight: 400;
+      font-weight: 800;
       font-size:xx-large;
       padding-top: 50px;
       padding-bottom: 25px;
