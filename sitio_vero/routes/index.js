@@ -10,13 +10,13 @@ router.get('/', function (req, res, next) {
 
 router.post('/', async (req, res, next) => {
   var nombre = req.body.nombre;
-  var mail = req.body.mail;
+  var email = req.body.email;
   var mensaje = req.body.mensaje;
 
   var obj = {
     to: 'claudioggutierrez@gmail.com',
     subject: 'Consulta sobre curso',
-    html: nombre + " " + "envió una consulta: " + mensaje + "Responder a " + mail,
+    html: nombre + " " + "envió una consulta: " + mensaje + "Responder a " + email,
   }
 
   var transporter = nodemailer.createTransport({
@@ -36,4 +36,4 @@ router.post('/', async (req, res, next) => {
 
 })
 
-module.exports = router;
+/* module.exports = router; */
