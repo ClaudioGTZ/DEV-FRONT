@@ -1,14 +1,13 @@
 var express = require('express');
 var router = express.Router();
-
 var nodemailer = require('nodemailer');
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
+router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-router.post('/', async (req, res, next) => {
+router.post('/', async(req, res, next) => {
   var nombre = req.body.nombre;
   var email = req.body.email;
   var mensaje = req.body.mensaje;
@@ -36,4 +35,4 @@ router.post('/', async (req, res, next) => {
 
 })
 
-/* module.exports = router; */
+module.exports = router;
