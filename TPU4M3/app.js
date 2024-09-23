@@ -27,13 +27,13 @@ app.use('/users', usersRouter);
 
 
 
-/* Consultar
+// Consultar
 // ('select * from alumnos') si quiero todos los campos
 
 pool.query('select nombre, telefono from alumnos').then(function (resultados) {
   console.log(resultados)
 });
-Fin consultar */
+// Fin consultar */
 
 
 
