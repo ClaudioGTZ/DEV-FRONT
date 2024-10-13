@@ -1,17 +1,39 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
-var novedadesmodel = require ('../models/novedadesModels');
+var novedadesmodel = require('../models/novedadesModels');
+var cloudinary = require('cloudinary').v2;
+
 
 /* GET home page. */
-router.get('/', async function(req, res, next) {
-  var novedades = await novedadesmodel.getNovedades()
+router.get('/', async function (req, res, next) {
+  var novedades = await novedadesmodel.getNovedades();
+  novedades = novedades.splice(0, 3); // Selecciona solo los primeros 4 elementos del array
+  novedades = novedades.map(novedad => {
+    if (novedad.img_id) {
+      const imagen = cloudinary.url(novedad.img_id, {
+        width: 200,
+        crop: 'fill'
+      });
+      return {
+        ...novedad,
+        imagen
+      };
+    } else {
+      return {
+        ...novedad,
+        imagen: 'img/noimage.jpg'
+      };
+    }
+  });
+
   res.render('index', {
     novedades
   });
 });
 
-router.post('/', async(req, res, next) => {
+
+router.post('/', async (req, res, next) => {
   var nombre = req.body.nombre;
   var email = req.body.email;
   var mensaje = req.body.mensaje;
