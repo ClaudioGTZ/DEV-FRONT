@@ -20,8 +20,15 @@
     <!-- Barra de navegación -->
     <nav id="inicio" class="navbar navbar-expand-lg">
         <div class="container navegacion">
-            <img src="img/logo.png" alt="Logo" class="me-4">  <!--logo -->
-    
+            <img src="img/logo.png" alt="Logo" class="me-4"> <!--logo -->
+
+            <!-- Menú Hamburgesa para celus y tablets -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <!--menú -->
             <div class="col collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 h6">
@@ -36,26 +43,26 @@
                             aria-expanded="false">Cursos
                         </a>
                         <ul class="dropdown-menu">
-                           <li><a class="dropdown-item" href="#curso">Gestión financiera</a></li>
-                            <li><a class="dropdown-item deshabilitado" href="#">Plan de negocios</a></li>
+                            <li><a class="dropdown-item" href="#curso">Gestión financiera</a></li>
+                            <li><a class="dropdown-item disabled" href="#">Plan de negocios</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
-                
+
                 <!--formulario de busqueda -->
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar curso" aria-label="Search">
-                    <button type="button" class="btn btn-primary">Buscar</button>
+                    <input class="form-control me-2" type="search" placeholder="Ver video" aria-label="Search" disabled>
+                    <button type="button" class="btn btn-primary botones" disabled>Buscar</button>
                 </form>
             </div>
         </div>
     </nav>
     <!-- Cierra la barra de naveganción. -->
 
-{{{body}}}
+    {{{body}}}
 
     <!-- Footer -->
     <footer class="footer" style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
@@ -71,11 +78,11 @@
             </div>
         </div>
     </footer>
-    
+
     <script> // Código para obtener el año actual y mostrarlo en el footer //
         document.getElementById('año').textContent = new Date().getFullYear();
     </script>
-    
+
     <!-- Código para JS de Boostrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

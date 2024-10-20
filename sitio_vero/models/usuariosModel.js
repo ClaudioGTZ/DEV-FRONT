@@ -8,8 +8,8 @@ async function getUserAndPassword(user, password) {
     return rows[0];
 
   } catch (error) {
-        console.log(error);
+    console.log(error);
   }
 }
 
-module.exports = {getUserAndPassword};
+module.exports = { getUserAndPassword };

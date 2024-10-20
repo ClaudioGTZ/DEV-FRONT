@@ -8,7 +8,7 @@ var cloudinary = require('cloudinary').v2;
 /* GET home page. */
 router.get('/', async function (req, res, next) {
   var novedades = await novedadesmodel.getNovedades();
-  novedades = novedades.splice(0, 3); // Selecciona solo los primeros 4 elementos del array
+  novedades = novedades.splice(0, 4); // Selecciona solo los primeros 4 elementos del array
   novedades = novedades.map(novedad => {
     if (novedad.img_id) {
       const imagen = cloudinary.url(novedad.img_id, {
@@ -32,7 +32,28 @@ router.get('/', async function (req, res, next) {
   });
 });
 
+/* Envío de fomrulario de suscripción */
+router.post('/suscripcion', async (req, res, next) => {
+  var sus_email = req.body.susemail;
 
+  var obj = {
+    to: 'claudioggutierrez@gmail.com',
+    subject: 'Suscripción al Newsletter',
+    html: sus_email + " " + "quiere suscribirse al Newsletter",
+  }
+
+  var transporter = nodemailer.createTransport({
+    host: process.env.SMTP_HOST,
+    port: process.env.SMTP_PORT,
+    auth: {
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
+    }
+  })
+  var sus_info = await transporter.sendMail(obj);
+})
+
+/* Envío de fomrulario de contacto */
 router.post('/', async (req, res, next) => {
   var nombre = req.body.nombre;
   var email = req.body.email;

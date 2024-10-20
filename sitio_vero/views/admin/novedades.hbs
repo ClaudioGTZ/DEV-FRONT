@@ -1,54 +1,73 @@
 <div class="container text-center my-4">
-    <span>Hola {{persona}}!</span>
+    <h3 class="curso_titulos">Hola {{persona}}!</h3>
     <div class="mt-3 mb-4">
         <a href="/admin/login/logout" class="btn btn-danger">
             Cerrar sesión <i class="fas fa-sign-out-alt"></i>
         </a>
     </div>
 
-    <div class="row"> <!-- Título y Botón nuevo -->
-        <div class="col-7" style="margin-top: -9px;">
-            <h2>Listado de Novedades</h2>
+    <div class="row align-items-center" style="background-color: #EFEFEF; padding-top: 10px; padding-bottom: 10px;">
+        <div class="col-7 d-flex align-items-center">
+            <h2 class="curso_titulos m-0">Listado de Novedades</h2>
         </div>
-        <div class="col-5 text-right">
+
+        <!--formulario de busqueda -->
+        <form class="col-3 d-flex" role="search" action="/admin/novedades" method="get">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar" name="q"
+                value="{{q}}">
+            <button type="submit" class="btn btn-primary my-2 my-sm-0 botones">Buscar</button>
+        </form>
+
+        <div class="col-2 text-right d-flex align-items-center justify-content-end">
             <a href="/admin/novedades/agregar" class="btn btn-success"><i class="fas fa-plus"></i> Nuevo</a>
         </div>
     </div>
 
+
     <div class="row" style="margin-top: 50px;"> <!-- Tabla con info -->
         <div class="col">
-            <table class="table">
-                <thead class="table-striped">
+            <table class="table table-striped">
+                <thead>
                     <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Novedad</th>
-                        <th scope="col">Fecha</th>
-                        <th scope="col">Bajada</th>
-                        <th scope="col" class="text-right">Desarrollo</th>
-                        <th scope="col">Imagen</th>
-                        <th scope="col">Link</th>
+                        <th scope="col" class="tabla_id">#</th>
+                        <th scope="col" class="tabla_novedad">Novedad</th>
+                        <th scope="col" class="tabla_fecha">Fecha</th>
+                        <th scope="col" class="tabla_bajada">Bajada</th>
+                        <th scope="col" class="tabla_desarrollo">Desarrollo</th>
+                        <th scope="col" class="tabla_imagen">Imagen</th>
+                        <th scope="col" class="tabla_link">Link</th>
                     </tr>
                 </thead>
+
                 <tbody>
                     {{#each novedades}}
-                    <tr>
+                    <tr class="align-middle">
                         <th scope="row">{{id_nov}}</th>
-                        <td>{{titulo}}</td>
+                        <td style="text-align: left;">{{titulo}}</td>
                         <td>{{fecha}}</td>
-                        <td>{{subtitulo}}</td>
-                        <td>{{cuerpo}}</td>
+                        <td style="text-align: left;">{{subtitulo}}</td>
+                        <td style="text-align: left;">{{cuerpo}}</td>
                         <td>{{{imagen}}}</td>
-                        <td>{{link}}</td>
+                        <td style="text-align: left;">{{link}}</td>
                         <td class="text-right">
                             <a href="/admin/novedades/modificar/{{id_nov}}" class="btn btn-secondary"><i
-                                    class="fas fa-pencil-alt"></i></a>
+                                    class="fas fa-pencil-alt"></i>
+                            </a>
                             <a href="/admin/novedades/eliminar/{{id_nov}}" class="btn btn-secondary">
-                                <i class="fas fa-trash"></i></a>
+                                <i class="fas fa-trash"></i>
+                            </a>
                         </td>
                     </tr>
                     {{/each}}
                 </tbody>
             </table>
+
+            {{#if is_search}}
+            {{#unless novedades.length}}
+            <span style="color: #ff000d;">No se encontraron resultados para "<b>{{q}}</b>"</span>
+            {{/unless}}
+            {{/if}}
+
         </div>
     </div> <!-- Fin Tabla con info -->
 </div>

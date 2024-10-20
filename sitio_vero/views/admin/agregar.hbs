@@ -1,36 +1,37 @@
 <div class="container" style="margin: 100px auto;">
     <div class="row">
         <div class="col-6 offset-3">
-            <h4>Agregar una nueva novedad</h4>
+            <div class="row align-items-center"
+                style="background-color: #EFEFEF; padding-top: 10px; padding-bottom: 10px;">
+                <div class="col-7 d-flex align-items-center">
+                    <h4 class="curso_titulos m-0">Agregar novedad</h4>
+                </div>
+            </div>
             <form action="/admin/novedades/agregar" method="post" enctype="multipart/form-data">
-                <div class="form-group" style="margin-bottom: 20px;">
+                <div class="form-group" style="margin: 20px;">
                     <input type="text" class="form-control" placeholder="Título" name="titulo">
                 </div>
-                <div class="form-group" style="margin-bottom: 20px;">
+                <div class="form-group" style="margin: 20px;">
                     <input type="date" class="form-control" placeholder="Fecha" name="fecha">
                 </div>
-                
-                <div class="form-group" style="margin-bottom: 20px;">
+
+                <div class="form-group" style="margin: 20px;">
                     <textarea class="form-control" placeholder="Subtítulo" name="subtitulo"></textarea>
                 </div>
 
-                <div class="form-group" style="margin-bottom: 20px;">
-                    <textarea class="form-control" placeholder="Cuerpo" name="cuerpo"></textarea>
+                <div class="form-group" style="margin: 20px;">
+                    <textarea class="form-control" placeholder="Desarrollo" name="cuerpo"></textarea>
                 </div>
 
-                <div class="form-group" style="margin-bottom: 20px;">
+                <div class="form-group" style="margin: 20px;">
                     <label>Imagen: <input class="form-control" type="file" name="imagen" id="imagen" /></label>
                 </div>
 
-                <div class="form-group" style="margin-bottom: 20px;">
-                    <textarea class="form-control" placeholder="Imagen" name="Imagen"></textarea>
-                </div>
-
-                <div class="form-group" style="margin-bottom: 20px;">
+                <div class="form-group" style="margin: 20px;">
                     <textarea class="form-control" placeholder="Link" name="Link"></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Guardar</button>
+                <button type="submit" class="btn btn-primary botones">Guardar</button>
             </form>
 
             {{#if error}}

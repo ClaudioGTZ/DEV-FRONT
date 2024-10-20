@@ -8,7 +8,15 @@ const destroy = util.promisify(cloudinary.uploader.destroy);
 
 // Listas las novedades de la BD
 router.get('/', async function (req, res, next) {
-  var novedades = await novedadesModels.getNovedades();
+  // var novedades = await novedadesModels.getNovedades();
+
+  var novedades;
+  if (req.query.q === undefined) {
+    novedades = await novedadesModels.getNovedades();
+  } else {
+    novedades = await novedadesModels.buscarNovedades(req.query.q);
+  }
+
   novedades = novedades.map(novedad => {
     if (novedad.img_id) {
       const imagen = cloudinary.image(novedad.img_id, {
@@ -31,7 +39,9 @@ router.get('/', async function (req, res, next) {
   res.render('admin/novedades', {
     layout: 'admin/layout',
     persona: req.session.nombre,
-    novedades
+    novedades,
+    is_search: req.query.q !== undefined,
+    q: req.query.q
   });
 });
 
@@ -39,9 +49,9 @@ router.get('/', async function (req, res, next) {
 router.get('/eliminar/:id_nov', async (req, res, next) => {
   const id = req.params.id_nov;
 
-  let novedad = await novedadesModel.getNovedadById(id);
+  let novedad = await novedadesModels.getNovedadById(id);
   if (novedad.img_id) {
-      await destroy(novedad.img_id);
+    await destroy(novedad.img_id);
   }
 
   await novedadesModels.deleteNovedadesById(id);

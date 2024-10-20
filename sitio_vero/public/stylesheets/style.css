@@ -7,130 +7,285 @@
     font-family: "Albert Sans", sans-serif; */
 
 
-    html {
-      scroll-behavior: smooth;
-  }
-  
-  .pacifico-regular {
-      font-family: "Pacifico", cursive;
-      font-weight: 400;
-      font-style: normal;
-  }
-  
-  .albert-sans {
-      font-family: "Albert Sans", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: <weight>;
-      /* valor entre 100 y 900 */
-      font-style: normal;
-  }
+html {
+    scroll-behavior: smooth;
+}
 
-  .menu {
-      display: flex;
-      justify-content: center;
-      font-weight: 500;
-  }
-  
-  .suscripcion {
-      background-color: #c7e7f0;
-      /* background-color: #95d1e4; */
-      display: flex;
-      justify-content: center;
-      margin-bottom: 10px;
-      margin-top: 10px;
-  }
-  
-  .navegacion {
-      display: flex;
-      justify-content: space-evenly;
-      margin-bottom: 10px;
-      margin-top: 10px;
-  }
-  
-  #quiensoy {
-      align-items: center; /* hace que los dos contenedores estén en horizontal y no en vertical */
-      display: flex;
-      justify-content: space-evenly;
-      padding: 5px;
-  }
-  
-  .seccion {
-      color: #016685;
-      font-family: "Pacifico";
-      font-style: oblique;
-      font-weight: 800;
-      font-size:xx-large;
-      padding-top: 50px;
-      padding-bottom: 25px;
-  }
-  
-  .curso {
-      margin-top: 75px;
-  }
-  
-  .newsletter {
-      font-family: 800;
-  }
-  
-  h1 {
-      font-family: "Albert Sans", sans-serif;
-  }
-  
-  h2 {
-      font-family: "Albert Sans", sans-serif;
-  }
-  
-  h3 {
-      font-family: "Albert Sans", sans-serif;
-  }
-  
-  h4 {
-      font-family: "Albert Sans", sans-serif;
-  }
-  
-  h4.b {
-      font-family: "Albert Sans", sans-serif;
-      color: #d4d4d4;
-      font-weight: 500;
-  }
-  
-  h5 {
-      color: 016685;
-      font-family: "Albert Sans", sans-serif;
-      font-weight: 700;
-  }
-  
-  h6 {
-      font-family: "Albert Sans", sans-serif;
-  }
-  
-  p {
-      font-family: "Albert Sans", sans-serif;
-  }
-  
-  .sinborde {
-      border: #fff;
-      box-shadow: width: 10;;
-  }
-  
-  .bordesredondeados {
-      border-radius: 22px 22px 22px 22px;
-  }
-  
-  .deshabilitado {
-    color: #e0e0e0;
-  }
-  
-  /* Estilos para el footer */
-  .footer {
-      align-items: center;
-      background-color: #016685;
-      color: #ececec;
-      display: flex;
-      flex-direction: column;
-      height: 75px;
-      justify-content: space-between;
-      padding-top: 10px;
-      text-align: center;
-  }
-  
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.albert-sans {
+    font-family: "Albert Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    /* valor entre 100 y 900 */
+    font-style: normal;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.suscripcion {
+    background-color: #c7e7f0;
+    /* background-color: #95d1e4; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#quiensoy {
+    align-items: center;
+    /* hace que los dos contenedores estén en horizontal y no en vertical */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.seccion {
+    color: #016685;
+    font-family: "Pacifico";
+    font-style: oblique;
+    font-weight: 550;
+    font-size: xx-large;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.curso {
+    margin-top: 75px;
+}
+
+.newsletter {
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 800;
+}
+
+/* Estilos para los botones */
+.botones {
+    background-color: #016685;
+    color: white;
+    border: none;
+}
+
+.botones:hover {
+    /* Color de fondo al pasar el mouse */
+    background-color: #7fabec;
+    color: white;
+    border: none;
+}
+
+/* Estilos para los botones del NavBar de los cursos*/
+.botones_curso {
+    background-color: #e7e7e7;
+    color: #016685;
+    padding: 5px;
+    margin: 10Px;
+}
+
+.botones_curso.active {
+    background-color: #016685;
+    color: white;
+}
+
+.botones_curso:hover,
+.botones_curso:focus {
+    /* Color de fondo al pasar el mouse */
+    background-color: #016685;
+    color: white;
+}
+
+
+/* Estilos para las tarjetas */
+.sinborde {
+    /* Elimina el borde de las tarjetas */
+    border: none;
+}
+
+
+
+/* Redefinicion de los texto H y P */
+h1 {
+    font-family: "Albert Sans", sans-serif;
+}
+
+h2 {
+    font-family: "Albert Sans", sans-serif;
+}
+
+h3 {
+    font-family: "Albert Sans", sans-serif;
+}
+
+h4 {
+    font-family: "Albert Sans", sans-serif;
+}
+
+h4.b {
+    font-family: "Albert Sans", sans-serif;
+    color: #d4d4d4;
+    font-weight: 500;
+}
+
+h5 {
+    color: #016685;
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 700;
+}
+
+h6 {
+    font-family: "Albert Sans", sans-serif;
+}
+
+p {
+    font-family: "Albert Sans", sans-serif;
+}
+
+
+/* Estilos para CURSO, DOCENTE y NOTAS DE PRENSA */
+.curso_titulos {
+    color: #016685;
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 40px;
+    /* text-align: left; */
+}
+
+
+/* Estilos para las Novedades */
+.novedades_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    /* Espacio entre las tarjetas */
+}
+
+.tarjetas {
+    flex: 1 1 200px;
+    /* Permite que las tarjetas crezcan y se encogen pero no menos de 200px */
+    background-color: #e4e4e4;
+    box-shadow: 10px 10px 38px -15px rgba(0, 0, 0, 0.67);
+}
+
+.img-fluid {
+    width: 100%;
+    /* Hace que las imágenes sean responsiv */
+    height: auto;
+}
+
+
+/* Estilos para los textos del Carrousel */
+.carrousel_texto {
+    position: absolute;
+    font-family: "Pacifico";
+    font-style: oblique;
+    color: white;
+    font-size: 25px;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-color: rgba(0, 0, 0, 0.3); /* Fondo traslúcido */
+    padding: 10px;
+}
+
+/* Estilos para el acordeon */
+.acordeon_item {
+    color: #016685;
+    font-weight: 600;
+}
+
+/* Estilos para fotografías de la sección Soy Vero */
+
+.fotografias_titulo {
+    color: white;
+    font-size: larger;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+    /*  font-weight: 600; */
+}
+
+.fotografias_subtitulo {
+    color: white;
+    font-size: medium;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+    /*  font-weight: 600; */
+}
+
+.fotografias_borde {
+    border-radius: 15px 15px 15px 15px;
+}
+
+/* Estilos para los modales */
+.modal_titulo {
+    text-decoration: none;
+    font-family: "Albert Sans", sans-serif;
+    color: #016685;
+    font-weight: 700;
+}
+
+.modal_link {
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* Estilos para el footer */
+.footer {
+    align-items: center;
+    background-color: #016685;
+    color: #ececec;
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    justify-content: space-between;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+/*Estilos para la Tabla de Novedades */
+
+.tabla_id {
+    width: 5%;
+}
+
+.tabla_novedad {
+    width: 10%;
+}
+
+.tabla_fecha {
+    width: 5%;
+}
+
+.tabla_bajada {
+    width: 15%;
+}
+
+.tabla_desarrollo {
+    width: 40%;
+}
+
+.tabla_imagen {
+    width: 15%;
+}
+
+.tabla_link {
+    width: 10%;
+}

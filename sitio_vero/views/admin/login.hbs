@@ -8,30 +8,22 @@
 
         <div class="form-group mb-3">
           <!-- <label for="usuario">USUARIO</label> -->
-          <input type="text"
-          class="form-control"
-          id="usuario"
-          placeholder="Usuario"
-          aria-describedby="emailHelp"
-          name="usuario">
+          <input type="text" class="form-control" id="usuario" placeholder="Usuario" aria-describedby="emailHelp"
+            name="usuario">
         </div>
 
         <div class="form-group mb-3">
           <!-- <label for="password">CONTRASEÑA</label> -->
-          <input type="password"
-          class="form-control"
-          id="Password"
-          placeholder="Contraseña"
-          name="password">
+          <input type="password" class="form-control" id="Password" placeholder="Contraseña" name="password">
         </div>
 
         <div class="d-flex justify-content-end">
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn btn-primary botones">Enviar</button>
         </div>
       </form>
 
       {{#if error}}
-        <p>Usuario o contraseña incorrecto</p> {{/if}}
+      <p>Usuario o contraseña incorrecto</p> {{/if}}
 
     </div>
   </div>
