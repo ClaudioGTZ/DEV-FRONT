@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 13-10-2024 a las 19:28:13
+-- Tiempo de generación: 24-10-2024 a las 12:56:45
 -- Versión del servidor: 5.5.24-log
 -- Versión de PHP: 5.4.3
 
@@ -123,20 +123,21 @@ CREATE TABLE IF NOT EXISTS `novedades` (
   `img_id` varchar(255) DEFAULT NULL,
   `link` varchar(255) NOT NULL,
   PRIMARY KEY (`id_nov`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
 
 --
 -- Volcado de datos para la tabla `novedades`
 --
 
 INSERT INTO `novedades` (`id_nov`, `fecha`, `titulo`, `subtitulo`, `cuerpo`, `imagen`, `img_id`, `link`) VALUES
-(1, '2024-03-08', 'EMPRENDER 2024', 'Modelos de negocios para emprendedores', 'Decidir el modelo de negocio es clave para el éxito de tu emprendimiento.  Existen diversas opciones como el modelo de suscripción, freemium (gratuito con opciones premium), marketplace, dropshipping, entre otros. Cada uno tiene sus pros y contras. Considera factores como tu producto o servicio, público objetivo y recursos disponibles. ¡Investiga y elige el que mejor se adapte a tu idea!', 'D:\\00 Claudio\\CURSOS\\Dev Front End\\TP CURSO UTN\\sitio_vero\\public\\img\\prensa_1.jpg', 'szfqjuqvx4jsqukw0cni', 'https://www.argentina.gob.ar/produccion/capacitar/como-crear-y-definir-tu-modelo-de-negocio'),
-(2, '2024-06-08', 'CAME te ayuda', 'En CAME esperan por tu proyecto.', 'La Cámara Argentina de la Mediana Empresa es una entidad que representa y defiende los intereses de las pequeñas y medianas empresas en Argentina. Ofrece una amplia gama de servicios y herramientas para ayudarte a crecer tu negocio: capacitaciones, financiamiento, asesoramiento legal, acceso a mercados y mucho más. ¡Súmate a la comunidad CAME y potencia tu emprendimiento.', 'D:\\00 Claudio\\CURSOS\\Dev Front End\\TP CURSO UTN\\sitio_vero\\public\\img\\prensa_2.jpg', 'ujyliyqidzvdxuehxjuh', 'https://chequeado.com/el-explicador/caso-rainbowex-en-san-pedro-que-es-una-estafa-piramidal-como-funciona-y-en-que-se-diferencia-del-esquema-ponzi/'),
-(4, '2024-05-11', 'Lo igual y lo distinto', 'El diseño en industrias duras', 'La pandemia de COVID-19 ha sido un catalizador para la transformación digital de las pequeñas y medianas empresas. Ante la necesidad de adaptarse a las nuevas restricciones y mantener sus operaciones, muchas pymes se han visto obligadas a adoptar tecnologías digitales como el comercio electrónico, el marketing digital y las herramientas de colaboración en línea.', 'D:\\00 Claudio\\CURSOS\\Dev Front End\\TP CURSO UTN\\sitio_vero\\public\\img\\prensa_3.jpg', 'sjnp4bmzgg0iax0439lr', 'https://foroalfa.org/articulos/lo-igual-y-lo-distinto'),
-(5, '2024-10-09', 'GEMA 2024', 'El problema del huevo o la gallina', 'En las cocinas hay un alimento simple que conquistó su lugar en la mesa diaria: el huevo. Año tras año, este modesto producto demostró, no solo ser uno de los más versátiles a la hora de las preparaciones, sino también uno de los más nutritivos. Características que le permiten ganar cada vez más protagonismo.', 'D:\\00 Claudio\\CURSOS\\Dev Front End\\TP CURSO UTN\\sitio_vero\\public\\img\\prensa_4', NULL, 'https://www.infobae.com/salud/2024/10/11/dia-mundial-del-huevo-un-superalimento-lleno-de-nutrientes-esenciales/'),
-(6, '2024-10-08', 'Economía circular', '¿Qué es la economía circular y por qué es importante?', 'La economía circular es un modelo de producción y consumo que busca minimizar el desperdicio y maximizar la reutilización de los recursos. A diferencia del modelo lineal tradicional, la economía circular se basa en cerrar los ciclos de vida de los productos, reduciendo así la generación de residuos y la demanda de materias primas.', 'D:\\00 Claudio\\CURSOS\\Dev Front End\\TP CURSO UTN\\sitio_vero\\public\\img\\prensa_5.jpg', NULL, 'https://www.mdsocialesa2030.gob.es/agenda2030/index.htm'),
-(9, '2024-10-15', 'Prueba 11', 'Prueba 11', 'Prueba 11', 'Prueba 11', NULL, 'Prueba 11'),
-(10, '2024-10-17', 'Prueba 12', 'Prueba 12', 'Prueba 12', 'Prueba 12', '', 'Prueba 12');
+(2, '2024-06-08', 'CAME te ayuda', 'En CAME esperan por tu proyecto.', 'La Cámara Argentina de la Mediana Empresa es una entidad que representa y defiende los intereses de las pequeñas y medianas empresas en Argentina. Ofrece una amplia gama de servicios y herramientas para ayudarte a crecer tu negocio: capacitaciones, financiamiento, asesoramiento legal, acceso a mercados y mucho más. ¡Súmate a la comunidad CAME y potencia tu emprendimiento.', 'D:\\00 Claudio\\CURSOS\\Dev Front End\\TP CURSO UTN\\sitio_vero\\public\\img\\prensa_2.jpg', 'kc0b4dduyt35veeigi2r', 'https://chequeado.com/el-explicador/caso-rainbowex-en-san-pedro-que-es-una-estafa-piramidal-como-funciona-y-en-que-se-diferencia-del-esquema-ponzi/'),
+(4, '2024-05-11', 'Lo igual y lo distinto', 'El diseño en industrias duras', 'La pandemia de COVID-19 ha sido un catalizador para la transformación digital de las pequeñas y medianas empresas. Ante la necesidad de adaptarse a las nuevas restricciones y mantener sus operaciones, muchas pymes se han visto obligadas a adoptar tecnologías digitales como el comercio electrónico, el marketing digital y las herramientas de colaboración en línea.', 'D:\\00 Claudio\\CURSOS\\Dev Front End\\TP CURSO UTN\\sitio_vero\\public\\img\\prensa_3.jpg', 'dup0s3cic4lzlyknh6zy', 'https://foroalfa.org/articulos/lo-igual-y-lo-distinto'),
+(5, '2024-10-09', 'GEMA 2024', 'El problema del huevo o la gallina', 'En las cocinas hay un alimento simple que conquistó su lugar en la mesa diaria: el huevo. Año tras año, este modesto producto demostró, no solo ser uno de los más versátiles a la hora de las preparaciones, sino también uno de los más nutritivos. Características que le permiten ganar cada vez más protagonismo.', 'D:\\00 Claudio\\CURSOS\\Dev Front End\\TP CURSO UTN\\sitio_vero\\public\\img\\prensa_4', 'yzyxehlxjjiirsbtjomd', 'https://www.infobae.com/salud/2024/10/11/dia-mundial-del-huevo-un-superalimento-lleno-de-nutrientes-esenciales/'),
+(6, '2024-10-08', 'Economía circular', '¿Qué es la economía circular y por qué es importante?', 'La economía circular es un modelo de producción y consumo que busca minimizar el desperdicio y maximizar la reutilización de los recursos. A diferencia del modelo lineal tradicional, la economía circular se basa en cerrar los ciclos de vida de los productos, reduciendo así la generación de residuos y la demanda de materias primas.', 'D:\\00 Claudio\\CURSOS\\Dev Front End\\TP CURSO UTN\\sitio_vero\\public\\img\\prensa_5.jpg', 'yjjxuupzos9gzrzhb87g', 'https://www.mdsocialesa2030.gob.es/agenda2030/index.htm'),
+(10, '2024-10-17', 'Prueba Final', 'Prueba Final', 'Prueba Final', 'Prueba 12', 'r84dvgie7bmttjrvlfbx', 'https://www.wired.com/story/big-interview-director-alfonso-cuaron-disclaimer-sci-fi/'),
+(11, '2024-10-17', 'Bauhaus 2025', 'Bauhaus 2025 Bauhaus 2025Bauhaus 2025', 'Bauhaus 2025 Bauhaus 2025 Bauhaus 2025 Bauhaus 2025 Bauhaus 2025Bauhaus 2025Bauhaus 2025 Bauhaus 2025 Bauhaus 2025', '', 'kwsbeiwa6delutrwvnbm', 'https://historia-arte.com/articulos/la-bauhaus'),
+(12, '2024-10-21', 'Prueba Correccion', 'Prueba Correccion Prueba Correccion Prueba Correccion', 'Prueba CorreccionPrueba CorreccionPrueba CorreccionPrueba CorreccionPrueba CorreccionPrueba CorreccionPrueba CorreccionPrueba Correccion', 'cmaltagmr6fyisdsyo7a', 's6wfeyqo1i3mizpkfgzg', 'https://app.clipchamp.com/editor/e0828bad-9864-49d8-9dea-1c03483147a7'),
+(13, '2024-10-21', 'Prueba Final', 'Prueba Final Prueba Final', 'Prueba FinalPrueba FinalPrueba FinalPrueba FinalPrueba FinalPrueba Final', '', 'ielj6au2hdxnldtnaebj', 'https://app.clipchamp.com/editor/e0828bad-9864-49d8-9dea-1c03483147a7');
 
 -- --------------------------------------------------------
 
