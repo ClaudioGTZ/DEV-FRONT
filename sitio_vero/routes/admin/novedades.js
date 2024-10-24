@@ -76,7 +76,9 @@ router.post('/agregar', async (req, res, next) => {
     if (req.body.titulo !== "" && req.body.fecha !== "" && req.body.subtitulo !== "" && req.body.cuerpo !== ""
       && req.body.imagen !== "" && req.body.link !== "") {  // Si todos los campos están llenos, inserta la novedad en la base de datos
       await novedadesModels.insertNovedad({
-        ...req.body, img_id
+        ...req.body,
+        imagen: img_id,
+        img_id
       });
 
       res.redirect('/admin/novedades');
